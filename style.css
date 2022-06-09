@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  height: auto;
 }
 
 html {
@@ -17,6 +18,7 @@ body {
   position: relative;
   display: flex;
   align-items: flex-start;
+  text-align: center;
 
   background: linear-gradient(to top left, #28b487, #7dd56f);
 }
@@ -31,6 +33,7 @@ body {
   color: #444;
   border-radius: 10rem;
   cursor: pointer;
+  z-index: 1 !important;
 }
 
 .close-modal {
@@ -59,7 +62,7 @@ p {
   display: none;
 }
 
-.modal {
+.modalView {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -81,5 +84,5 @@ p {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
-  z-index: 5;
+  z-index: 5 !important;
 }
